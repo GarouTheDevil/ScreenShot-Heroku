@@ -24,7 +24,7 @@ async def start(c, m, cb=False):
         InlineKeyboardButton("Settings", callback_data="set+settings")
     ]]
 
-    TEXT = f"Hai {m.from_user.mention},\n\nI Am Screenshot Generator Bot With Few More Features"
+    TEXT = f"**Hai {m.from_user.mention},\nI Am Screenshot Generator Bot With Few More Features**"
     
     if cb:
         try:
