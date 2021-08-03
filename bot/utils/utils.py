@@ -112,8 +112,8 @@ class Utilities:
                 ''.join([f"◽" for i in range(math.floor(percentage / 10))]),
                 ''.join([f"◾" for i in range(10 - math.floor(percentage / 10))])
             )
-            current_message = f"**Downloading ⬇️ :** {round(percentage, 2)}%\n\n"
-            current_message += f"{progressbar}\n\n"
+            current_message = f"**Downloading ⬇️ :** {round(percentage, 2)}%\n"
+            current_message += f"{progressbar}\n"
             current_message += f"{HOLLOW_RED_CIRCLE} **Speed** : {Utilities.humanbytes(speed)}/s\n"
             current_message += f"{HOLLOW_RED_CIRCLE} **Done** : {Utilities.humanbytes(current)}\n"
             current_message += f"{HOLLOW_RED_CIRCLE} **Size** : {Utilities.humanbytes(total)}\n"
