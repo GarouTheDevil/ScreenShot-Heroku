@@ -89,7 +89,7 @@ class Utilities:
     async def generate_stream_link(media_msg):
         media_location = f"/app/bot/DOWNLOADS/{media_msg.from_user.id}{media_msg.message_id}/download.mkv"
         if not os.path.exists(media_location):
-            status_msg = await media_msg.reply_text("**Downloading Media File....📥**", quote=True)
+            status_msg = await media_msg.reply_text("**Downloading ⬇️**", quote=True)
             start_time = time.time()
             media_location = await media_msg.download(
                 file_name=media_location,
@@ -297,8 +297,8 @@ class Utilities:
         screenshot_mode = await db.get_screenshot_mode(chat_id)
         font_size = await db.get_font_size(chat_id)
         mode_txt = "Document" if as_file else "Image"
-        wm_txt = watermark_text if watermark_text else "No watermark exists!"
-        genmode = "Equally spaced" if screenshot_mode == 0 else "Random screenshots"
+        wm_txt = watermark_text if watermark_text else "No watermark Exists"
+        genmode = "Equally spaced" if screenshot_mode == 0 else "Random Screenshots"
 
         sv_btn = [
             InlineKeyboardButton("Sample video Duration", "rj"),
