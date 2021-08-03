@@ -1,0 +1,82 @@
+{
+ "name": "Screenshot Bot",
+ "description": "Screenshot /Sample Video / Trim Video files",
+ "logo": "https://telegra.ph/file/a3a32dcceb8201635c1f0.jpg",
+ "stack": "heroku-20", 
+ "keywords": [
+   "telegram",
+   "Screenshot",
+   "Sample video",
+   "Trim Video"
+  ],
+  "repository": "https://github.com/Ns-AnoNymouS/screenshot-bot",
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID. Get this value from my.telegram.org!",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": " Your Telegram API HASH. Get this value from my.telegram.org!",
+      "value": ""
+    },
+    "BOT_TOKEN": {
+      "description": "Your Bot token, as a string.",
+      "value": ""
+    },
+    "SESSION_NAME": {
+      "description": "Name you want to call your bot's session, Eg: bot username.",
+      "value": ""
+    },
+    "LOG_CHANNEL": {
+      "description": "Log channel's id.",
+      "value": ""
+    },
+    "DATABASE_URL": {
+      "description": "Mongodb database URI from https://cloud.mongodb.com/",
+      "value": ""
+    },
+    "AUTH_USERS": {
+      "description": "Authorised user(s) id separated by space.",
+      "value": ""
+    },
+    "MAX_PROCESSES_PER_USER": {
+      "description": "Number of parallel processes each user can have, defaults to 2.",
+      "value": "2",
+      "required": false
+    },
+    "MAX_TRIM_DURATION": {
+      "description": "Maximum allowed seconds for trimming. Defaults to 600.",
+      "value": "600",
+      "required": false
+    },
+    "TRACK_CHANNEL": {
+      "description": "User activity tracking channel's id. Only needed if you want to track and block any user. Disabled by default.",
+      "required": false
+    },
+    "SLOW_SPEED_DELAY": {
+      "description": "Delay required between each request. Defaults to 5s.",
+      "value": "5",
+      "required": false
+    },
+    "TIMEOUT": {
+      "description": "Maximum time alloted to each process in seconds, after which process will be cancelled. Defaults to 1800s(30 mins)",
+      "value": "1800",
+      "required": false
+    },
+    "DEBUG": {
+      "description": "Set some value to use DEBUG logging level. INFO by default",
+      "required": false
+    },
+    "WORKER_COUNT": {
+      "description": "Maximum number of processes should bot handle at a time to control overload on bot default value is 20.",
+      "required": false
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "heroku/python"
+  }]
+}
