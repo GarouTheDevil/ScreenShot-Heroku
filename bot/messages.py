@@ -1,87 +1,87 @@
 class Messages:
     ADDED_TO_QUEUE = (
-        "Your Request Has Been Added To The Queue. If You Have More Than {per_user_process_count} "
-        "Ongoing Processes, Then This Process Will Only Start After One of Them Finishes"
+        "**Your Request Has Been Added To The Queue. If You Have More Than** `{per_user_process_count}`"
+        "**Ongoing Processes, Then This Process Will Only Start After One of Them Finishes**"
     )
-    MEDIA_MESSAGE_DELETED = "Don't Delete Messages"
-    CANNOT_OPEN_FILE = "File Not Supported"
+    MEDIA_MESSAGE_DELETED = "**Don't Delete Messages**"
+    CANNOT_OPEN_FILE = "**File Not Supported**"
     PROCESS_TIMEOUT = (
-        "Process Failed"
-        "Taking Too Long To Complete It"
+        "**Process Failed**"
+        "**Taking Too Long To Complete It**"
     )
     TRACK_USER_ACTIVITY = "User ID : `{chat_id}`"
-    PROCESSING_REQUEST = "Processing...⏳"
-    SCREENSHOT_AT = "ScreenShot At {time}"
-    SCREENSHOT_PROCESS_FAILED = "Failed To Generate Screenshots"
+    PROCESSING_REQUEST = "**Processing...⏳**"
+    SCREENSHOT_AT = "**ScreenShot At** `{time}`"
+    SCREENSHOT_PROCESS_FAILED = "**Failed To Generate Screenshots**"
     SCREENSHOT_PROCESS_SUCCESS = (
-        " Screenshots Generated Successfuly \nRequested : {count}  "
-        "Total : {total_count} "
-        "\nUploading ⬆️"
+        "**Screenshots Generated Successfuly \nRequested :** `{count}`"
+        "**Total :** `{total_count}`"
+        "\n**Uploading ⬆️**"
     )
     PROCESS_UPLOAD_CONFIRM = (
-        "Process Done In {total_process_duration}"
+        "**Process Done In** `{total_process_duration}`"
     )
     WRONG_FORMAT = "Please Follow The Format"
-    VIDEO_PROCESS_CAPTION = "Sample video \n Duration : {duration}s \nFrom : {start}"
-    SCREENSHOTS_START = "Generating Screenshot...⏳"
+    VIDEO_PROCESS_CAPTION = "**Sample video \nDuration :** {duration}s \n**From :** {start}"
+    SCREENSHOTS_START = "**Generating Screenshot...⏳**"
 
-    SAMPLE_VIDEO_PROCESS_START = "Generating Sample Video...⏳"
-    SAMPLE_VIDEO_PROCESS_FAILED = "Failed To Generate Sample Video"
+    SAMPLE_VIDEO_PROCESS_START = "**Generating Sample Video...⏳**"
+    SAMPLE_VIDEO_PROCESS_FAILED = "**Failed To Generate Sample Video**"
     SAMPLE_VIDEO_PROCESS_SUCCESS = (
-        "Sample Video Generated Successfuly"
+        "**Sample Video Generated Successfuly**""
     )
 
     SAMPLE_VIDEO_PROCESS_FAILED_GENERATION = (
-        "Stream Link : {file_link}\n\n Duration {sample_duration} Sample Video"
-        "Generation Failed\n\n{ffmpeg_output}"
+        "**Stream Link :** `{file_link}`\n**Duration :** `{sample_duration}` **Sample Video**"
+        "**Generation Failed**\n\n`{ffmpeg_output}`"
     )
     SAMPLE_VIDEO_PROCESS_OPEN_ERROR = (
-        "Stream Link : {file_link}\n\nSample Video Requested\n\n{duration}"
+        "**Stream Link :** `{file_link}`\n**Sample Video Requested \nDuration :** `{duration}`"
     )
 
-    SCREENSHOTS_PROGRESS = "`{current}` Of `{total}` Generated"
+    SCREENSHOTS_PROGRESS = "`{current}` **Of** `{total}` **Generated**"
     MANUAL_SCREENSHOTS_OPEN_ERROR = (
-        "stream link : {file_link}\n\nRequested Manual Screenshots\n\n{duration}"
+        "**Stream Link :** `{file_link}`\n**Requested Manual Screenshots** \nDuration :** `{duration}`"
     )
     MANUAL_SCREENSHOTS_NO_VALID_POSITIONS = (
-        "None Of The Given positions Where Valid"
+        "**None Of The Given positions Where Valid**"
     )
     MANUAL_SCREENSHOTS_VALID_PISITIONS_ABOVE_LIMIT = (
-        "Only 10 Screenshots Can Be Generated, Found : `{valid_positions_count}`"
-        "Valid Positions In Your Request"
+        "**Only 10 Screenshots Can Be Generated, Found :** `{valid_positions_count}`"
+        "**Valid Positions In Your Request**"
     )
     MANUAL_SCREENSHOTS_INVALID_POSITIONS_ALERT = (
-        "Found : `{invalid_positions_count}` Invalid Positions ({invalid_positions}).\n"
-        "Generating Screenshots After Ignoring These"
+        "**Found :** `{invalid_positions_count}` \n**Invalid Positions :** ({invalid_positions}).\n"
+        "**Generating Screenshots After Ignoring These**"
     )
     MANUAL_SCREENSHOTS_FAILED_GENERATION = (
-        "Stream Link : {file_link}\nManual Screenshots `{raw_user_input}`"
+        "**Stream Link :** `{file_link}` \n**Manual Screenshots :** `{raw_user_input}`"
     )
 
-    TRIM_VIDEO_INVALID_RANGE = "The Range Is Invalid"
+    TRIM_VIDEO_INVALID_RANGE = "**The Range Is Invalid**"
     TRIM_VIDEO_DURATION_ERROR = (
-        "Provide Any Range UpTo `{max_duration}s`"
-        "Your Requested Range **{start} : {end}** Is `{request_duration}s` Long"
+        "**Provide Any Range UpTo** `{max_duration}s`"
+        "**Your Requested Range** `{start}` : `{end}` **Is** `{request_duration}s` **Long**"
     )
-    TRIM_VIDEO_OPEN_ERROR = "Stream Link : {file_link}\nTrim Video Requested\n{start} : {end}\n\n Duration : `{duration}`"
+    TRIM_VIDEO_OPEN_ERROR = "**Stream Link :** `{file_link}` \n**Trim Video Requested** \n`{start}` : `{end}` \n**Duration :** `{duration}`"
     TRIM_VIDEO_RANGE_OUT_OF_VIDEO_DURATION = (
-        "The Requested Range Is Out Of The Videos Duration"
+        "**The Requested Range Is Out Of The Videos Duration**"
     )
     TRIM_VIDEO_PROCESS_FAILED = (
-        "Failed To Trim The Video"
+        "**Failed To Trim The Video**"
     )
-    TRIM_VIDEO_PROCESS_FAILED_GENERATION = "Stream Link : {file_link}\n\nVideo Trim Failed.\n{start} : {end}\n\n{ffmpeg_output}"
+    TRIM_VIDEO_PROCESS_FAILED_GENERATION = "**Stream Link :** `{file_link}` \n**Video Trim Failed** \n`{start}` : `{end}` \n{ffmpeg_output}"
     TRIM_VIDEO_PROCESS_SUCCESS = (
-        "Video Trimmed Successfuly \nUploading ⬆️"
+        "**Video Trimmed Successfuly \nUploading ⬆️**"
     )
-    TRIM_VIDEO_START = "Trimming...⏳"
+    TRIM_VIDEO_START = "**Trimming...⏳**"
 
-    SCREENSHOTS_OPEN_ERROR = "Stream Link : {file_link}\n\nRequested Screenshots : {num_screenshots}.\nDuration : {duration}"
+    SCREENSHOTS_OPEN_ERROR = "**Stream Link :** `{file_link}` \n**Requested Screenshots :** `{num_screenshots}` \n**Duration :** `{duration}`"
     SCREENSHOTS_FAILED_GENERATION = (
-        "Stream Link : {file_link}\n\n{num_screenshots} Screenshots Where Requested "
-        "And Screenshots Where Not Generated"
+        "**Stream Link :** `{file_link}` \n`{num_screenshots}` **Screenshots Where Requested**"
+        "**And Screenshots Where Not Generated**"
     )
 
-    SETTINGS = "Settings :"
+    SETTINGS = "**Settings :**"
 
-    MEDIAINFO_START = "Generating Media Information...⏳"
+    MEDIAINFO_START = "**Generating Media Information...⏳**"
