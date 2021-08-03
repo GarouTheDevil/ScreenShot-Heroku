@@ -10,14 +10,14 @@ BUTTONS = [[
     InlineKeyboardButton('CLOSE', callback_data='close')
 ]]
 
-HELP_TEXT = """Read Below Text :
+HELP_TEXT = """**Read Below Text :**
 
-• Use /set_watermark Along With Text To Add Water Mark
-• Use /settings To Change Config As You Wanted
-• You Can Adjust WaterMark **Colour** , Watermark **Font Size** , Watermark **Position** , Sample **Video Duration** , Screenshot **Genetation Mode**
+**• Use** /set_watermark **Along With Text To Add Water Mark**
+**• Use** /settings **To Change Config As You Wanted**
+**• You Can Adjust WaterMark Colour , Watermark Font Size , Watermark Position , Sample Video Duration , Screenshot Genetation Mode**
 
-• Send Video Or File And Select Your Desired Option
-• Wait Until The Process Complete 
+**• Send Video Or File And Select Your Desired Option**
+**• Wait Until The Process Complete**
 
 {admin_notification}
 """
