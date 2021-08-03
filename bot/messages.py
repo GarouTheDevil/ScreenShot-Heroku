@@ -28,7 +28,7 @@ class Messages:
     SAMPLE_VIDEO_PROCESS_START = "**Generating Sample Video...⏳**"
     SAMPLE_VIDEO_PROCESS_FAILED = "**Failed To Generate Sample Video**"
     SAMPLE_VIDEO_PROCESS_SUCCESS = (
-        "**Sample Video Generated Successfuly**""
+        "**Sample Video Generated Successfuly**"
     )
 
     SAMPLE_VIDEO_PROCESS_FAILED_GENERATION = (
