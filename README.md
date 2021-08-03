@@ -14,7 +14,7 @@ An attempt to implement the screenshot generation of telegram files. Live versio
 
 ## Installation Guide
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/Ns-AnoNymouS/screenshot-bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/David-raj123/ScreenShot-Heroku)
 
 ### Prerequisites
 
@@ -39,7 +39,7 @@ $ python3 -m venv venv
 $ source venv/bin/activate
 ```
 
-* Install dependencies.
+* Install dependencies
 
 ```
 $ pip3 install -U -r requirements.txt
