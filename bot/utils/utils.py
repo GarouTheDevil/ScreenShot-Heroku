@@ -109,15 +109,15 @@ class Utilities:
             time_to_complete = round(((total - current) / speed))
             time_to_complete = Utilities.TimeFormatter(time_to_complete)
             progressbar = "[{0}{1}]".format(
-                ''.join([f"{BLACK_MEDIUM_SMALL_SQUARE}" for i in range(math.floor(percentage / 10))]),
-                ''.join([f"{WHITE_MEDIUM_SMALL_SQUARE}" for i in range(10 - math.floor(percentage / 10))])
+                ''.join([f"◽" for i in range(math.floor(percentage / 10))]),
+                ''.join([f"◾" for i in range(10 - math.floor(percentage / 10))])
             )
-            current_message = f"**Downloading:** {round(percentage, 2)}%\n\n"
+            current_message = f"**Downloading ⬇️ :** {round(percentage, 2)}%\n\n"
             current_message += f"{progressbar}\n\n"
-            current_message += f"{HOLLOW_RED_CIRCLE} **Speed**: {Utilities.humanbytes(speed)}/s\n\n"
-            current_message += f"{HOLLOW_RED_CIRCLE} **Done**: {Utilities.humanbytes(current)}\n\n"
-            current_message += f"{HOLLOW_RED_CIRCLE} **Size**: {Utilities.humanbytes(total)}\n\n"
-            current_message += f"{HOLLOW_RED_CIRCLE} **Time Left**: {time_to_complete}\n\n"
+            current_message += f"{HOLLOW_RED_CIRCLE} **Speed** : {Utilities.humanbytes(speed)}/s\n"
+            current_message += f"{HOLLOW_RED_CIRCLE} **Done** : {Utilities.humanbytes(current)}\n"
+            current_message += f"{HOLLOW_RED_CIRCLE} **Size** : {Utilities.humanbytes(total)}\n"
+            current_message += f"{HOLLOW_RED_CIRCLE} **Time Left** : {time_to_complete}\n"
             try:
                 await msg.edit(
                     text=current_message
@@ -301,31 +301,31 @@ class Utilities:
         genmode = "Equally spaced" if screenshot_mode == 0 else "Random screenshots"
 
         sv_btn = [
-            InlineKeyboardButton("⏱ Sample video Duration", "rj"),
+            InlineKeyboardButton("Sample video Duration", "rj"),
             InlineKeyboardButton(f"{sample_duration}s", "set+sv")
         ]
         wc_btn = [
-            InlineKeyboardButton("🎨 Watermark Color", "rj"),
+            InlineKeyboardButton("Watermark Color", "rj"),
             InlineKeyboardButton(f"{Config.COLORS[watermark_color_code]}", "set+wc")
         ]
         fs_btn = [
-            InlineKeyboardButton(f"𝔸𝕒 Watermark Font Size", "rj"),
+            InlineKeyboardButton(f"WM Font Size", "rj"),
             InlineKeyboardButton(f"{Config.FONT_SIZES_NAME[font_size]}", "set+fs")
         ]
         wp_btn = [
-            InlineKeyboardButton("🎭 Watermark Position", "rj"),
+            InlineKeyboardButton("Watermark Position", "rj"),
             InlineKeyboardButton(f"{Config.POSITIONS[watermark_position]}", "set+wp")
         ]
         as_file_btn = [
-            InlineKeyboardButton("📤 Upload Mode", "rj"),
+            InlineKeyboardButton("Upload Mode", "rj"),
             InlineKeyboardButton(f"{mode_txt}", "set+af")
         ]
         wm_btn = [
-            InlineKeyboardButton("💧 Watermark", "rj"),
+            InlineKeyboardButton("Watermark", "rj"),
             InlineKeyboardButton(f"{wm_txt}", "set+wm")
         ]
         sm_btn = [
-            InlineKeyboardButton("📸 SS Gen Mode", "rj"),
+            InlineKeyboardButton("SS Gen Mode", "rj"),
             InlineKeyboardButton(f"{genmode}", "set+sm")
         ]
 
