@@ -23,7 +23,7 @@ async def _(c, m):
             return
 
     snt = await m.reply_text(
-        "Please Wait...⏳",
+        "**Please Wait...⏳**",
         quote=True,
     )
 
@@ -31,7 +31,7 @@ async def _(c, m):
         await snt.delete()
         file_link = await Utilities.generate_stream_link(m)
         snt = await m.reply_text(
-            "Processing...⏳",
+            "**Processing...⏳**",
             quote=True,
         ) 
     else:
